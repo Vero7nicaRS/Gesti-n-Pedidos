@@ -42,7 +42,7 @@ ENDPOINTS
 
 PRODUCTOS
 ---------
-POST /productos
+- POST /productos
 Crea un nuevo producto.
 
     Body:
@@ -52,7 +52,7 @@ Crea un nuevo producto.
             "precio": 12.25
         }
 
-GET /productos/{id}
+- GET /productos/{id}
 
 Obtiene la información de un producto por su identificador.
 
@@ -61,7 +61,7 @@ Obtiene la información de un producto por su identificador.
 PEDIDOS
 -------
 
-POST /pedidos
+- POST /pedidos
 Crea un nuevo pedido.
 
     Body:
@@ -73,10 +73,10 @@ Crea un nuevo pedido.
             ]
         }
 
-GET /pedidos/{id}
+- GET /pedidos/{id}
 Obtiene la información de un pedido por su identificador.
 
-PUT /pedidos/{id}
+- PUT /pedidos/{id}
 Modifica un pedido existente.
 
     Body:
@@ -87,8 +87,9 @@ Modifica un pedido existente.
             ]
         }
 
-DELETE /pedidos/{id}
+
+- DELETE /pedidos/{id}
 Elimina un pedido existente.
 
-GET /pedidos
+- GET /pedidos
 Obtiene el listado completo de pedidos existentes.

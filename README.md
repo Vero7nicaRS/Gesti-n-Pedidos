@@ -45,12 +45,12 @@ PRODUCTOS
 POST /productos
 Crea un nuevo producto.
 
-Body:
+    Body:
 
-{
-    "nombre": "Vestido",
-    "precio": 12.25
-}
+        {
+            "nombre": "Vestido",
+            "precio": 12.25
+        }
 
 GET /productos/{id}
 
@@ -64,14 +64,14 @@ PEDIDOS
 POST /pedidos
 Crea un nuevo pedido.
 
-Body:
-{
-    "nombre_cliente": "Pepe",
-    "lista_pedidos": [
-        {"id_producto": 1, "cantidad": 2},
-        {"id_producto": 3, "cantidad": 8}
-    ]
-}
+    Body:
+        {
+            "nombre_cliente": "Pepe",
+            "lista_pedidos": [
+                {"id_producto": 1, "cantidad": 2},
+                {"id_producto": 3, "cantidad": 8}
+            ]
+        }
 
 GET /pedidos/{id}
 Obtiene la información de un pedido por su identificador.
@@ -79,13 +79,13 @@ Obtiene la información de un pedido por su identificador.
 PUT /pedidos/{id}
 Modifica un pedido existente.
 
-Body:
-{
-    "nombre_cliente": "Laura",
-    "lista_pedidos": [
-        {"id_producto": 2, "cantidad": 5}
-    ]
-}
+    Body:
+        {
+            "nombre_cliente": "Laura",
+            "lista_pedidos": [
+                {"id_producto": 2, "cantidad": 5}
+            ]
+        }
 
 DELETE /pedidos/{id}
 Elimina un pedido existente.

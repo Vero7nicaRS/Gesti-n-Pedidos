@@ -46,10 +46,12 @@ POST /productos
 Crea un nuevo producto.
 
 Body:
+
 {
     "nombre": "Vestido",
     "precio": 12.25
 }
 
 GET /productos/{id}
+
 Obtiene la información de un producto por su identificador.
